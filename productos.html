@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Productos</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="menu">
+
+<h2 class="logo">Tienda Azul</h2>
+
+<nav>
+
+<a href="index.html">Inicio</a>
+
+<input type="text" id="buscar" placeholder="Buscar producto...">
+
+<div class="carrito-icono">
+🛒 <span id="contador-carrito">0</span>
+</div>
+
+</nav>
+
+</header>
+
+<h1 class="titulo">Catálogo de Productos</h1>
+
+<section id="catalogo" class="catalogo"></section>
+
+<section class="carrito">
+
+<h2>Carrito de compras</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Cantidad</th>
+<th>Subtotal</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody id="lista-carrito"></tbody>
+
+</table>
+
+<div class="totales">
+
+<p>Subtotal: $<span id="subtotal">0</span></p>
+<p>IVA (16%): $<span id="iva">0</span></p>
+<p>Total: $<span id="total">0</span></p>
+
+</div>
+
+<button id="vaciar" class="btn-vaciar">Vaciar carrito</button>
+
+</section>
+
+<script src="productos.js"></script>
+<script src="carrito.js"></script>
+<script src="busqueda.js"></script>
+
+</body>
+</html>
